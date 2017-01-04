@@ -1,0 +1,42 @@
+CREATING A MODULE THAT CAN DO CRUD (CREATE READ UPDATE DELETE)
+
+CREATED BY: EROS NIKO CAS ALVAREZ
+DATE CREATED : 08/04/2016
+------------------------------------------------------------------------------------------------------------------
+START!
+
+MSACCESS REPOSITORY:
+	TABLE NAME : TEACHERS 
+
+------------------------------------------------------------------------------------------------------------------
+VBA CODING:
+
+BUSINESS ENTITY NAME : BL_BE_TEACHERS 
+	time started 1:06 
+	time ended 1:07
+
+BUSINESS WORKFLOW NAME : BL_BW_TEACHERS
+	time started 1:09 08/04/16
+	time ended 1:22am
+
+MODULE NAME: Teacher_Module
+USE: 	     FOR TESTING CRUD
+ 
+	time created 1:24
+	result on insert/UPDATE/DELETE : positive at 1:30
+	preparing for select query 1:31
+	DONE TESTING AND DEBUGGING SELECT 1:38
+
+------------------------------------------------------------------------------------------------------------------
+SUMMARY:
+
+total # of time of development
+
+BL_BE_TEACHERS = 1min
+BL_BW_TEACHERS = 13min
+MODULE_TESTING = 13min
+TOTAL = 27 mins
+
+ideal minimum time of development : total *1.25 = 33.75mins or 0.6hrs
+
+maximum time of development : total * 2.50 =67.5mins or 1.125 hrs

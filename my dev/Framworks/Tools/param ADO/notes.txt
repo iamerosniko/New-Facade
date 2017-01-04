@@ -1,0 +1,25 @@
+ADVANCED ADO
+modules and classes affected
+	Sys_Util
+	DL_UT_AccessDB
+	BL_BC_ICrud
+	BL_BC_Dispatcher
+modules/classes added
+	BL_BE_Parameters
+	BW_Template
+
+
+NEW FRAMEWORK RULE
+FORM / VIEW -- Fetch and Compilation of data and entities/collections
+Service Layer -- instructions
+Workflows -- specific SQL Command
+
+ideal flow of Service layer
+1.) CRUD functionality in HUMAN code
+
+SL -- ReadData()gets collection of entity
+BW -- SelectAll() passes recordset and returns collection of entity to SL
+   -- compileAsCollection(rs) accepts recordset returns Collections
+	
+
+Reconstruction .... 

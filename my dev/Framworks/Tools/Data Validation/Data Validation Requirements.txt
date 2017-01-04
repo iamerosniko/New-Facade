@@ -1,0 +1,28 @@
+Data Validation Requirements
+Tables : 
+	S_Columns
+	S_ColumnsTemp
+	S_Errors
+	S_RegEx
+	S_TableMapper
+Forms  :
+	S_Create Mapping
+	S_Data Validator
+	S_Excel Data Validation
+	S_Mapping
+Modules:
+	Sys_ExcelImport
+	Sys_Export
+	Sys_FileDialog
+	Sys_ImportTemp
+	Sys_Messages
+	Sys_TableMapper
+	Sys_Util
+Classes:
+	BL_BC_ImportPluggin
+	BL_BC_Dispatcher
+	BL_BC_QueryInfo
+	BL_BC_SValidation
+	BL_BE_FilterField
+	DL_DA_Generic
+	DL_UT_ACCESSDB

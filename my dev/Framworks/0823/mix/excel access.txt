@@ -1,0 +1,29 @@
+Function getColumns(ByRef lb As ListBox) As String
+On Error GoTo errGetColumns:
+    Dim rs As ADODB.Recordset
+    Dim str As String, count As Integer, i As Integer
+
+    Set rs = con.GetData("select * from importTemp")
+    count = rs.Fields.count
+    For i = 0 To count - 1
+        str = str & rs.Fields(i).Name & "; ;"
+    Next i
+    lb.RowSource = str
+
+    getColumns = CStr(count)
+errGetColumns:
+    Exit Function
+End Function
+
+
+'
+'Private Sub Command0_Click()
+'    Set my_xl_app = CreateObject("Excel.Application")
+'    Set my_xl_workbook = my_xl_app.Workbooks.Open("C:\Users\alvaero\Desktop\q2.xls")
+'
+'    my_xl_workbook.Sheets(1).Cells(1, 1) = "Valve"
+'    my_xl_workbook.Close
+'
+'    Set my_xl_app = Nothing
+'    MsgBox "done"
+'End Sub

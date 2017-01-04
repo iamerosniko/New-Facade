@@ -1,0 +1,23 @@
+PREVENT DEVELOPERS MODE in MS ACCESS 2010
+
+I. Hide Navigation pane (for confidentiality of objects)
+  1. file > options > current database
+	  > under Navigation > untick Navigation Pane
+II. Encrypt VBA code 
+  1. Alt + F11 > Tools > "PROJECT_NAME" properties
+  2. 	       > Protection Tab > tick Lock Project for Viewing
+  3.           > Protection Tab > encrypt this with password
+III. Import Module 'Sys_Settings.bas'
+IV. Customization
+  1. on it's default form insert two labels (this is for enableDevMode and disableDevMode)
+     and add a onclick function to it.
+  2. on first label (enableDevMode) onclick method
+     write this code
+	Sys_Settings.ap_EnableShift
+  3. on second label (disableDevMode) onclick method
+     write this code
+	Sys_Settings.ap_DisableShift
+V. Activation before Deployment
+  1. run in normal mode or in dev mode (SHIFT+ENTER)
+  2. under default form click the 2nd label if you want to disable the developers Mode 
+	and click the 1st if you want to reactivate the developers mode
